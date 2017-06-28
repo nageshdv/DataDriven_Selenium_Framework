@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7738" started-at="2017-06-27T23:22:04Z" finished-at="2017-06-27T23:22:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7738" started-at="2017-06-27T23:22:04Z" finished-at="2017-06-27T23:22:12Z">
+      <class name="com.selenium.core.ddf.testcases.DummyTestC">
+        <test-method status="PASS" signature="testC(java.util.Hashtable)[pri:0, instance:com.selenium.core.ddf.testcases.DummyTestC@c540f5a]" name="testC" duration-ms="151" started-at="2017-06-27T16:22:08Z" data-provider="getData" finished-at="2017-06-27T16:22:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Col2=C2, Col1=C1, Runmode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.core.ddf.testcases.DummyTestC@c540f5a]" name="quit" is-config="true" duration-ms="2153" started-at="2017-06-27T16:22:08Z" finished-at="2017-06-27T16:22:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="testC(java.util.Hashtable)[pri:0, instance:com.selenium.core.ddf.testcases.DummyTestC@c540f5a]" name="testC" duration-ms="17" started-at="2017-06-27T16:22:10Z" data-provider="getData" finished-at="2017-06-27T16:22:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Col2=C4, Col1=C3, Runmode=N}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.selenium.core.ddf.testcases.DummyTestC.testC(DummyTestC.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.core.ddf.testcases.DummyTestC@c540f5a]" name="quit" is-config="true" duration-ms="455" started-at="2017-06-27T16:22:10Z" finished-at="2017-06-27T16:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="testC(java.util.Hashtable)[pri:0, instance:com.selenium.core.ddf.testcases.DummyTestC@c540f5a]" name="testC" duration-ms="23" started-at="2017-06-27T16:22:11Z" data-provider="getData" finished-at="2017-06-27T16:22:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Col2=C6, Col1=C5, Runmode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.core.ddf.testcases.DummyTestC@c540f5a]" name="quit" is-config="true" duration-ms="314" started-at="2017-06-27T16:22:11Z" finished-at="2017-06-27T16:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="testC(java.util.Hashtable)[pri:0, instance:com.selenium.core.ddf.testcases.DummyTestC@c540f5a]" name="testC" duration-ms="14" started-at="2017-06-27T16:22:11Z" data-provider="getData" finished-at="2017-06-27T16:22:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Col2=C8, Col1=C7, Runmode=N}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.selenium.core.ddf.testcases.DummyTestC.testC(DummyTestC.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.core.ddf.testcases.DummyTestC@c540f5a]" name="quit" is-config="true" duration-ms="420" started-at="2017-06-27T16:22:11Z" finished-at="2017-06-27T16:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -26,10 +26,11 @@ import com.selenium.core.ddf.util.Xls_Reader;
 		@Test(dataProvider="getData")
 		public void testB(Hashtable<String,String> data){
 			
-			test = rep.startTest("DummyTestB");
+			test = rep.startTest("TestB");
 			test.log(LogStatus.INFO, "Starting the Test TesB");
 			test.log(LogStatus.INFO, data.toString());
-			if(!DataUtil.isRunnable(testCaseName, xls) || data.get("Runmodes").equals("N")){
+			
+			if(!DataUtil.isRunnable(testCaseName, xls) || data.get("Runmode").equals("N")){
 			
 				test.log(LogStatus.SKIP, "Skipping the test as runmode is N");
 				throw new SkipException("Skipping the test as runmode is N");
@@ -40,28 +41,7 @@ import com.selenium.core.ddf.util.Xls_Reader;
 			test.log(LogStatus.INFO, "Opening Browser");
 			navigate("appurl");
 			
-			//Verify Text
 			
-			/*if(!verifyText("signintext_xpath","signinText"))
-				reportFailure("Text Did not Match ");*/
-			
-		
-			softAssert.assertTrue(true,"Err3");
-			
-			
-			
-			//check if email field is present
-			/*if(!isElementPresent("email_id"))
-				reportFailure("Email filed not present");
-			*/
-			
-			type("email_xpath","saikrishna45@gmail.com");
-			click("button_xpath");
-			
-			
-			test.log(LogStatus.PASS, "Test B Pass");
-			//screenshots
-			takeScreenShot();
 			
 		}
 		
@@ -71,6 +51,7 @@ import com.selenium.core.ddf.util.Xls_Reader;
 			
 			
 		}
+		
 		@AfterMethod
 		public void quit(){
 			try{
@@ -90,7 +71,7 @@ import com.selenium.core.ddf.util.Xls_Reader;
 		public Object[][] getData(){
 			
 			super.init();
-			Xls_Reader xls = new Xls_Reader(prop.getProperty("xlspath"));
+			xls = new Xls_Reader(prop.getProperty("xlspath"));
 			return DataUtil.getTestData(xls,testCaseName);
 		
 	}

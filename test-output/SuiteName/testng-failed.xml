@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteName]">
+  <test name="TestA(failed)">
+    <classes>
+      <class name="com.selenium.core.ddf.testcases.DummyTestC">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestC -->
+      <class name="com.selenium.core.ddf.testcases.DummyTestA">
+        <methods>
+          <include name="testA3"/>
+          <include name="testA2"/>
+          <include name="testA1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestA -->
+      <class name="com.selenium.core.ddf.testcases.DummyTestB">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestB -->
+    </classes>
+  </test> <!-- TestA(failed) -->
+  <test name="TestB(failed)">
+    <classes>
+      <class name="com.selenium.core.ddf.testcases.DummyTestC">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestC -->
+      <class name="com.selenium.core.ddf.testcases.DummyTestB">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testB" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestB -->
+      <class name="com.selenium.core.ddf.testcases.DummyTestA">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestA -->
+    </classes>
+  </test> <!-- TestB(failed) -->
+  <test name="TestC(failed)">
+    <classes>
+      <class name="com.selenium.core.ddf.testcases.DummyTestC">
+        <methods>
+          <include name="quit"/>
+          <include name="testC" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestC -->
+      <class name="com.selenium.core.ddf.testcases.DummyTestB">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestB -->
+      <class name="com.selenium.core.ddf.testcases.DummyTestA">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.core.ddf.testcases.DummyTestA -->
+    </classes>
+  </test> <!-- TestC(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->

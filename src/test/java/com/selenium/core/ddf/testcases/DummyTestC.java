@@ -6,6 +6,7 @@ import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -17,14 +18,15 @@ import com.selenium.core.ddf.util.Xls_Reader;
 
 public class DummyTestC extends BaseTest {
 	
-	String TestCaseName = "TestC";
+	String testCaseName = "TestC";
+	SoftAssert softAssert;
 	Xls_Reader xls;
 	
 	@Test(dataProvider="getData")
 	public void testC(Hashtable<String,String> data){
-		test = rep.startTest("DummyTestC");
+		test = rep.startTest("TestC");
 	
-		if(!DataUtil.isRunnable(TestCaseName, xls) || data.get("Runmodes").equals("N")){
+		if(!DataUtil.isRunnable(testCaseName, xls) || data.get("Runmode").equals("N")){
 			
 			test.log(LogStatus.SKIP, "Skipping the test as runmode is N");
 			throw new SkipException("Skipping the test as runmode is N");
@@ -49,8 +51,8 @@ public class DummyTestC extends BaseTest {
 	public Object[][] getData(){
 		
 		super.init();
-		Xls_Reader xls = new Xls_Reader(prop.getProperty("xlspath"));
-		return DataUtil.getTestData(xls,TestCaseName);
+		xls = new Xls_Reader(prop.getProperty("xlspath"));
+		return DataUtil.getTestData(xls,testCaseName);
 	
 }
 

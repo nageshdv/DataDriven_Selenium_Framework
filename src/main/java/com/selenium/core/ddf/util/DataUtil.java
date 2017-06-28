@@ -4,7 +4,7 @@ import java.util.Hashtable;
 
 public class DataUtil {
 	
-	public static Object[][] getTestData(Xls_Reader xls,String testName){
+	public static Object[][] getTestData(Xls_Reader xls,String testCaseName){
 		
 		String sheetName="Data";
 		
@@ -12,7 +12,7 @@ public class DataUtil {
 		//read data for only testCaseName
 		
 		int testStartRowNum=1;
-		while(!xls.getCellData(sheetName,0,testStartRowNum).equals(testName)){
+		while(!xls.getCellData(sheetName,0,testStartRowNum).equals(testCaseName)){
 			
 			testStartRowNum++;
 		}
@@ -63,7 +63,7 @@ public class DataUtil {
 			
 			String tName=xls.getCellData(sheet, "TCID", r);
 			if(tName.equals(testName)){
-				String runmode = xls.getCellData(sheet, "Runmodes", r);
+				String runmode = xls.getCellData(sheet, "Runmode", r);
 				if(runmode.equals("Y"))
 					return true;
 				else

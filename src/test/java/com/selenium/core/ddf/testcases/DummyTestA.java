@@ -15,7 +15,7 @@ public class DummyTestA extends BaseTest {
 	@Test(priority=1)
 	public void testA1(){
 		
-		test = rep.startTest("DummyTestA");
+		test = rep.startTest("TestA");
 		Assert.fail();
 	}
 	
